@@ -15,3 +15,14 @@
 .card .pic .card-img-top{
     width: 100%;
 }
+.dev-icons .fa-square-p {
+    color: #31a8ff; /* Photoshop 的藍色 */
+}
+
+.dev-icons .fa-square-a {
+    color: #ff9a00; /* Illustrator 的橘色 */
+}
+
+.dev-icons .fa-square-r {
+    color: #9999ff; /* Premiere Pro 的紫色 */
+}
