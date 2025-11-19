@@ -15,26 +15,3 @@
 .card .pic .card-img-top{
     width: 100%;
 }
-.scrollable-column {
-    /* 設定最大高度：您可以根據網頁空間調整這個值，例如 80vh (視窗高度的 80%) */
-    max-height: 600px; 
-    
-    /* 啟用垂直滾動條 */
-    overflow-y: auto; 
-    
-    /* 讓內容更美觀，可以稍微增加內邊距 */
-    padding: 0 10px;
-}
-
-/* 確保卡片之間有足夠的間距，因為原來的 col-4/pt-4 結構已被移除 */
-/* 我在 HTML 中新增了 card-wrapper，用來確保卡片有間距 */
-.card-wrapper {
-    margin-bottom: 20px; /* 卡片底部間距 */
-}
-
-/* 讓所有卡片在滾動欄位中保持一致的寬度，忽略原本的 style="width: 18rem;" */
-/* 這樣卡片會填滿整個 col-lg-4 的寬度 */
-.scrollable-column .card {
-    width: 100% !important;
-    border: 1px solid #e0e0e0;
-}
