@@ -15,19 +15,21 @@
 .card .pic .card-img-top{
     width: 100%;
 }
-/* 這是針對您新插入的圖片檔案的樣式 */
 .skill-img {
-    height: 4rem;   /* 設定圖片高度，與 Font Awesome 圖標的 font-size 保持一致 */
-    width: auto;    /* 讓圖片寬度自動調整，保持原始比例 */
-    vertical-align: middle; /* 垂直對齊，讓它與文字或圖標排在一起時更美觀 */
-    margin: 0 1.5rem; /* 左右間距，與 Font Awesome 圖標的間距保持一致 */
+    /* 這是關鍵！將高度強制設定為與您的 Font Awesome 圖標一樣大 */
+    /* 這裡假設您的圖標尺寸為 4rem，這是常見的設定 */
+    height: 4rem !important; 
+    
+    /* 讓寬度根據高度等比例縮小，防止變形 */
+    width: auto !important; 
+    
+    /* 確保圖片在列表中垂直居中，與 Font Awesome 圖標對齊 */
+    vertical-align: middle; 
 }
 
-/* 為了更好地對齊，您可以調整 Font Awesome 圖標的垂直對齊和外邊距 */
-/* 檢查您的 .dev-icons .list-inline-item i 或類似的 CSS 選擇器， */
-/* 並添加或修改以下屬性以確保圖片和圖標對齊 */
-.dev-icons .list-inline-item i {
+/* 為了更好的兼容性，您也可以直接對父元素中的所有 img 標籤設定 */
+.dev-icons .list-inline-item img {
+    height: 4rem !important;
+    width: auto !important;
     vertical-align: middle;
-    /* 如果 Font Awesome 圖標有額外的 margin，這裡也需要調整 */
-    /* 例如：margin: 0 1.5rem; */ 
 }
