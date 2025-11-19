@@ -18,7 +18,7 @@
 .skill-img {
     /* 這是關鍵！將高度強制設定為與您的 Font Awesome 圖標一樣大 */
     /* 這裡假設您的圖標尺寸為 4rem，這是常見的設定 */
-    height: 50px !important; 
+    height: 10px !important; 
     
     /* 讓寬度根據高度等比例縮小，防止變形 */
     width: auto !important; 
@@ -29,7 +29,7 @@
 
 /* 為了更好的兼容性，您也可以直接對父元素中的所有 img 標籤設定 */
 .dev-icons .list-inline-item img {
-    height: 50px !important;
+    height: 10px !important;
     width: auto !important;
     vertical-align: middle;
 }
