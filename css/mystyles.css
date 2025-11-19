@@ -15,14 +15,19 @@
 .card .pic .card-img-top{
     width: 100%;
 }
-.dev-icons .fa-square-p {
-    color: #31a8ff; /* Photoshop 的藍色 */
+/* 這是針對您新插入的圖片檔案的樣式 */
+.skill-img {
+    height: 4rem;   /* 設定圖片高度，與 Font Awesome 圖標的 font-size 保持一致 */
+    width: auto;    /* 讓圖片寬度自動調整，保持原始比例 */
+    vertical-align: middle; /* 垂直對齊，讓它與文字或圖標排在一起時更美觀 */
+    margin: 0 1.5rem; /* 左右間距，與 Font Awesome 圖標的間距保持一致 */
 }
 
-.dev-icons .fa-square-a {
-    color: #ff9a00; /* Illustrator 的橘色 */
-}
-
-.dev-icons .fa-square-r {
-    color: #9999ff; /* Premiere Pro 的紫色 */
+/* 為了更好地對齊，您可以調整 Font Awesome 圖標的垂直對齊和外邊距 */
+/* 檢查您的 .dev-icons .list-inline-item i 或類似的 CSS 選擇器， */
+/* 並添加或修改以下屬性以確保圖片和圖標對齊 */
+.dev-icons .list-inline-item i {
+    vertical-align: middle;
+    /* 如果 Font Awesome 圖標有額外的 margin，這裡也需要調整 */
+    /* 例如：margin: 0 1.5rem; */ 
 }
